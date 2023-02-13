@@ -10,7 +10,6 @@ fetch('http://localhost:3000/people')
         renderCharacters(peopleList)
     })
 
-    console.log(darkSide)
 
 function renderCharacters(array){
     array.forEach(character => {
@@ -30,7 +29,9 @@ function renderCharacters(array){
     })
 }
 
-
+//What if we change this to a dropdown menu.
+//We could select either Light or Dark
+//An if statement would determine which characters show up, and which are display: none
 toggleButton.addEventListener('change', e =>{
     let darkArray = Array.from(darkSide)
     darkArray.forEach(character => {

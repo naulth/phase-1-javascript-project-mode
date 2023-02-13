@@ -2,17 +2,56 @@
     background-color: white;
     color: black;
 }
+
 .dark{
     background-color: black;
     color: white;
 }
+
 li{
     list-style-type: none;
+    padding: 10px;
 }
+
 img{
     height: 20rem;
     width: auto;
 }
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 75px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.box {
+  display: inline-block;
+  padding: 30px;
+}
+
+#main {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+input {
+  width: 25%;
+  margin: auto;
+}
+
+#submit {
+  background-color: #FFE81F;
+  color: black;
+}
+
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
