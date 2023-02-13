@@ -2,8 +2,7 @@ const characterList = document.getElementById('character-list')
 const characterImage = document.getElementById('character-image')
 const toggleButton = document.getElementById('toggle')
 const darkSide = document.getElementsByClassName('dark')
-const liArray = Array.from(characterList)
-//const characters = peopleList   
+const form = document.getElementById('character-form')   
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -32,22 +31,33 @@ function renderCharacters(array){
 }
 
 
-        toggleButton.addEventListener('change', e =>{
-        //     //darkSide.style.display = "none"
-        //     // let darkList = peopleList.filter (character => {
-        //     //     if(character.side != "light"){
-        //     //         return true
-        //     //     }
-        //     // })
-        //     // darkList.forEach(character =>{
-        //     //     character.style.display = "none"
-        //     // })
-        //     console.log(liArray)
-        let darkArray = Array.from(darkSide)
-        darkArray.forEach(character => {
-        
+toggleButton.addEventListener('change', e =>{
+    let darkArray = Array.from(darkSide)
+    darkArray.forEach(character => {
         character.style.display = "none"
-        })
+    })
+})   
 
-        })   
+
+form.addEventListener('submit', e =>{
+    e.preventDefault()
+    let newCharacter = document.createElement('object')
+    newCharacter.name = e.target.name.value
+    newCharacter.img = e.target.image.value
     
+    let newLi = document.createElement('li')
+    newLi.textContent = newCharacter.name
+    newLi.className = "listLis"
+
+    if(e.target.side.value == "Light" || e.target.side.value == "light"){
+        newLi.className = "light"
+    } else if (e.target.side.value == "Dark" || e.target.side.value == "dark"){
+        newLi.className = "dark"
+    } 
+
+    newLi.addEventListener('click', e=>{
+        characterImage.src = newCharacter.img
+                characterImage.alt = `${newCharacter.name} image`
+    })
+    characterList.append(newLi)
+})
