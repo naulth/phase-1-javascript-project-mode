@@ -21,17 +21,20 @@ fetch('http://localhost:3000/people')
                 characterLi.className = "dark"
             }
             
-        })
-        toggleButton.addEventListener('change', e =>{
-            //darkSide.style.display = "none"
-            let lightList = peopleList.filter (character => {
-                if(character.side === "light"){
-                    return true
-                }
-                
+            toggleButton.addEventListener('change', e =>{
+                //darkSide.style.display = "none"
+                let darkList = peopleList.filter (character => {
+                    if(character.side != "light"){
+                        return true
+                    }
+                })
+                // darkList.forEach(character =>{
+                //     character.style.display = "none"
+                // })
+                console.log(darkList)
             })
-            console.log(lightList)
         })
+        
     })
 
 
