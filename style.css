@@ -11,7 +11,11 @@
 li{
     list-style-type: none;
     padding: 10px;
+    font-size: 20px;
+    border:#FFE81F solid 1px;
 }
+
+
 
 img{
     height: 20rem;
