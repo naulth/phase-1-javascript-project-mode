@@ -32,7 +32,7 @@ function renderCharacters(array){
 }
 
 
-        // toggleButton.addEventListener('change', e =>{
+        toggleButton.addEventListener('change', e =>{
         //     //darkSide.style.display = "none"
         //     // let darkList = peopleList.filter (character => {
         //     //     if(character.side != "light"){
@@ -43,5 +43,11 @@ function renderCharacters(array){
         //     //     character.style.display = "none"
         //     // })
         //     console.log(liArray)
-        // })   
+        let darkArray = Array.from(darkSide)
+        darkArray.forEach(character => {
+        
+        character.style.display = "none"
+        })
+
+        })   
     
