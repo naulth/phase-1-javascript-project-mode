@@ -4,6 +4,11 @@ const toggleButton = document.getElementById('toggle')
 const darkSide = document.getElementsByClassName('dark')
 const form = document.getElementById('character-form')   
 const cardContainer = document.getElementById('card')
+const lightSide = document.getElementsByClassName('light')
+const resetBtn = document.getElementById('reset')
+// let lightArray = Array.from(lightSide)
+// let darkArray = Array.from(darkSide)
+
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -56,8 +61,47 @@ toggleButton.addEventListener('change', e =>{
                 character.style.display = "block"
             })
     }
+    if (toggleButton.checked === false) {
+        let lightArray = Array.from(lightSide)
+            lightArray.forEach(character => {
+                character.style.display = "none"
+            })
+            } else {
+            let lightArray = Array.from(lightSide)
+                lightArray.forEach(character => {
+                character.style.display = "block"
+            })
+    }
+
 })
-  
+
+
+const dropdown = document.getElementById('character-dropdown')
+        const characterLis = characterList.children
+        console.log(characterLis)
+        
+        
+        // charArray = Array.from(characterLis)
+        // console.log(charArray)
+        //let characterLi = document.getElementById('character-list').children
+        
+        dropdown.addEventListener('change', function sortBreeds(e) {
+            if (characterLis.className === e.target.value){
+                characterLis.style.display = "block"
+            } else {
+                characterLis.style.display = "none"
+            }
+        })
+
+
+// resetBtn.addEventListener('click', e =>{
+//     lightArray.forEach(character => {
+//         character.style.display = "block"
+//     })
+//     darkArray.forEach(character => {
+//         character.style.display = "block"
+//     })
+// })
 
 form.addEventListener('submit', e =>{
     e.preventDefault()

@@ -16,10 +16,19 @@
         <h1>Star Wars Characters</h1>
             <div class="box">
                 <div>
+                    
+                    <label for="select-side">Filter Characters By Alignment</label>
+                    <select id="character-dropdown" name="select-side">
+                      <option value="light">Light Side</option>
+                      <option value="dark">Dark Side</option>
+                    </select>
+
                     <label class="switch">
                         <input id = "toggle" type="checkbox">
                         <span class="slider round"></span>
                     </label>
+                    
+
                 </div>
                 <ul id="character-list"></ul>
             </div>
