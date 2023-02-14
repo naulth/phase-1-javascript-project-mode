@@ -162,6 +162,9 @@ form.addEventListener('submit', e =>{
         })
     })
 })
-// newForm.addEventListener('submit', e => {
-    
-// })
+
+
+//hidden baby yoda
+//lightsaber on class select
+//toggle switch opacity
+//toggle switch to hide everything?
