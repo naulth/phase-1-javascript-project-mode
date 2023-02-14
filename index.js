@@ -4,6 +4,8 @@ const toggleButton = document.getElementById('toggle')
 const darkSide = document.getElementsByClassName('dark')
 const form = document.getElementById('character-form')   
 
+const modeBtn = document.getElementById('mode');
+
 fetch('http://localhost:3000/people')
     .then(r => r.json())
     .then(peopleList => {
@@ -32,13 +34,26 @@ function renderCharacters(array){
 //What if we change this to a dropdown menu.
 //We could select either Light or Dark
 //An if statement would determine which characters show up, and which are display: none
+// toggleButton.addEventListener('change', e =>{
+//     let darkArray = Array.from(darkSide)
+//     darkArray.forEach(character => {
+//         character.style.display = "none"
+//     })
+// })   
 toggleButton.addEventListener('change', e =>{
-    let darkArray = Array.from(darkSide)
-    darkArray.forEach(character => {
-        character.style.display = "none"
-    })
-})   
-
+    if (toggleButton.checked === true) {
+        let darkArray = Array.from(darkSide)
+            darkArray.forEach(character => {
+                character.style.display = "none"
+            })
+            } else {
+            let darkArray = Array.from(darkSide)
+                darkArray.forEach(character => {
+                character.style.display = "block"
+            })
+    }
+})
+  
 
 form.addEventListener('submit', e =>{
     e.preventDefault()
