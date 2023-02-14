@@ -35,7 +35,7 @@ p{
 
 #card {
   text-align: center;
-  border: grey solid 1px;
+  border: yellow solid 1px;
   padding: 1rem;
   width: auto;
   height: auto;
@@ -67,7 +67,7 @@ h1 {
 }
 
 #main {
-  text-align: left;
+  text-align: center;
   width: 80%;
   margin: auto;
 }
@@ -87,6 +87,21 @@ input {
   color: black;
 }
 
+#character-dropdown {
+  position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    left: 625;
+    top: 520;
+}
+
+#character-form{
+  position: absolute;
+    left: -100;
+    top: 520;
+    width: 1000px;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -94,8 +109,8 @@ input {
     display: inline-block;
     width: 60px;
     height: 34px;
-    left: 800;
-    top: 475;
+    left: 400;
+    top: 400;
   }
   
   /* Hide default HTML checkbox */

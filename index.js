@@ -93,6 +93,10 @@ dropdown.addEventListener('change', function sortBreeds(e) {
             li.style.display = "block"
         } else{
             li.style.display = "none"
+        } 
+        
+        if (e.target.value === "all") {
+            li.style.display = "block"
         }
     })
     
