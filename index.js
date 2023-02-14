@@ -6,8 +6,8 @@ const form = document.getElementById('character-form')
 const cardContainer = document.getElementById('card')
 const lightSide = document.getElementsByClassName('light')
 const resetBtn = document.getElementById('reset')
-// let lightArray = Array.from(lightSide)
-// let darkArray = Array.from(darkSide)
+const allChars = document.getElementsByClassName('char')
+
 
 
 fetch('http://localhost:3000/people')
@@ -22,6 +22,7 @@ function renderCharacters(array){
         let characterLi = document.createElement('li')
         characterLi.textContent = character.name
         characterList.append(characterLi)
+        //characterLi.className = "char"
 
         characterLi.addEventListener('click', e =>{
             // const div = document.createElement('div')
@@ -75,23 +76,27 @@ toggleButton.addEventListener('change', e =>{
 
 })
 
-
 const dropdown = document.getElementById('character-dropdown')
-        const characterLis = characterList.children
-        console.log(characterLis)
-        
-        
-        // charArray = Array.from(characterLis)
-        // console.log(charArray)
-        //let characterLi = document.getElementById('character-list').children
-        
-        dropdown.addEventListener('change', function sortBreeds(e) {
-            if (characterLis.className === e.target.value){
-                characterLis.style.display = "block"
-            } else {
-                characterLis.style.display = "none"
-            }
-        })
+const characterLis = characterList.children
+
+//console.log(characterLis)
+
+
+// charArray = Array.from(characterLis)
+// console.log(charArray)
+//let characterLi = document.getElementById('character-list').children
+
+dropdown.addEventListener('change', function sortBreeds(e) {
+    Array.from(characterLis).forEach(li => {
+        console.log(li)
+        if (li.className === e.target.value){
+            li.style.display = "block"
+        } else{
+            li.style.display = "none"
+        }
+    })
+    
+})
 
 
 // resetBtn.addEventListener('click', e =>{
@@ -115,6 +120,8 @@ form.addEventListener('submit', e =>{
     let newLi = document.createElement('li')
     newLi.textContent = newCharacter.name
     newLi.className = "listLis"
+    
+
 
     if(e.target.side.value == "Light" || e.target.side.value == "light"){
         newLi.className = "light"
