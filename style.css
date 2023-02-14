@@ -21,7 +21,9 @@ li{
     border: #FFE81F solid 1px;
 }
 
-
+#card-image {
+  text-align:center;
+}
 
 
 
@@ -37,7 +39,7 @@ p{
   text-align: center;
   border: #FFE81F solid 1px;
   padding: 1rem;
-  width: auto;
+  width: 575px;
   height: auto;
   display: inline-grid;
   margin: 1rem 2rem;
@@ -45,7 +47,7 @@ p{
   position: absolute;
   top: 500; 
   right: 100;
-
+  background-color: black;
 }
 
 img{
