@@ -18,7 +18,7 @@ li{
     list-style-type: none;
     padding: 10px;
     font-size: 20px;
-    border:#FFE81F solid 1px;
+    border: #FFE81F solid 1px;
 }
 
 
@@ -26,39 +26,43 @@ li{
 
 
 h2{
-  color: yellow;
+  color: #FFE81F;
 }
 
 p{
-  color: yellow;
+  color: #FFE81F;
 }
 
 #card {
   text-align: center;
-  border: yellow solid 1px;
+  border: #FFE81F solid 1px;
   padding: 1rem;
   width: auto;
   height: auto;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px yellow;
+  box-shadow: 3px 4px #FFE81F;
   position: absolute;
   top: 500; 
-  right: 200;
+  right: 100;
 
 }
 
 img{
+  text-align: center;
     height: 20rem;
     width: auto;
 }
 
 h1 {
+  position: absolute;
   font-family: 'Courier New', Courier, monospace;
   font-size: 75px;
   text-align: center;
   /*padding-top: 100px;*/
-  color: yellow;
+  color: #FFE81F;
+  top: 300;
+  left: 525;
 }
 
 .box {
@@ -73,9 +77,18 @@ h1 {
 }
 
 h3 {
-  color: yellow;
+  color: #FFE81F;
   font-size: 30px;
   font-family:'Courier New', Courier, monospace;
+}
+
+h4 {
+  position: absolute;
+  color: #FFE81F;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  top: 425;
+  left: 800;
 }
 
 input {
@@ -89,17 +102,20 @@ input {
 }
 
 #character-dropdown {
+  background-color: black;
+  color: white;
+  border: solid 2px #FFE81F;
   position: absolute;
-    display: inline-block;
-    width: 100px;
-    height: 34px;
-    left: 625;
-    top: 520;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+  left: 725;
+  top: 520;
 }
 
 #character-form{
   position: absolute;
-    left: 200;
+    left: 300;
     top: 520;
 }
 
@@ -109,8 +125,8 @@ input {
     display: inline-block;
     width: 60px;
     height: 34px;
-    left: 400;
-    top: 400;
+    left: 720;
+    top: 465;
   }
   
   /* Hide default HTML checkbox */
@@ -128,7 +144,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: yellow;
+    background-color: #FFE81F;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -171,5 +187,10 @@ input {
   #character-list {
     position: absolute;
     top: 500;
-    left: 700;
+    left: 800;
   }
+   #edit-form{
+    position: absolute;
+    left: 300;
+    top: 720;
+  } 

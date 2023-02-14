@@ -9,7 +9,7 @@ const resetBtn = document.getElementById('reset')
 const allChars = document.getElementsByClassName('char')
 const audioElement= document.getElementById("music")
 audioElement.muted = true
-
+const newForm = document.getElementById('edit-form')
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -23,7 +23,7 @@ function renderCharacters(array){
         let characterLi = document.createElement('li')
         characterLi.textContent = character.name
         characterList.append(characterLi)
-        //characterLi.className = "char"
+        characterLi.setAttribute("id", `${character.id}`)
 
         characterLi.addEventListener('click', e =>{
             // const div = document.createElement('div')
@@ -162,3 +162,6 @@ form.addEventListener('submit', e =>{
         })
     })
 })
+// newForm.addEventListener('submit', e => {
+    
+// })

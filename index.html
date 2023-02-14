@@ -18,6 +18,9 @@
                 alt = "Star Wars Logo"
                 />
         <h1>Star Wars Characters</h1>
+        <h4>
+            Toggle for music!
+        </h4>
             <div class="box">
                 <div>
                     
@@ -27,7 +30,7 @@
                         <option value="light">Light Side</option>
                         <option value="dark">Dark Side</option>
                     </select>
-
+                    
                     <label class="switch">
                         <input id = "toggle" type="checkbox">
                         <span class="slider round"></span>
@@ -100,6 +103,57 @@
                 />
                 </form>
             </div>
+             <div>
+            <form id="edit-form">
+                <h3>Edit A Character!</h3>
+                <input
+                    type="text"
+                    name="name"
+                    value=""
+                    placeholder="Enter a character's new name..."
+                    class="input-text"
+                />
+                <br />
+                <input
+                    type="text"
+                    name="image"
+                    value=""
+                    placeholder="Enter a character's new image URL..."
+                    class="input-text"
+                />
+                <br />
+                <input
+                    type="text"
+                    name="side"
+                    value=""
+                    class="input-text"
+                    placeholder="Dark or Light"
+                />
+                <br />
+                <input
+                    type="text"
+                    name="height"
+                    value=""
+                    class="input-text"
+                    placeholder="New character's Height"
+                />
+                <br />
+                <input
+                    type="text"
+                    name="birthYear"
+                    value=""
+                    class="input-text"
+                    placeholder="New character's Birth Year"
+                />
+                <br />
+                <input id = "submit"
+                    type="submit"
+                    name="submit"
+                    value="Create Character"
+                    class="submit"
+                />
+                </form>
+            </div> 
         </div>
     </body>
 </html>
