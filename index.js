@@ -65,7 +65,9 @@ form.addEventListener('submit', e =>{
     newCharacter.name = e.target.name.value
     newCharacter.img = e.target.image.value
     newCharacter.side = e.target.side.value
-    
+    newCharacter.birth_year = e.target.birthYear.value
+    newCharacter.height = e.target.height.value
+
     let newLi = document.createElement('li')
     newLi.textContent = newCharacter.name
     newLi.className = "listLis"
@@ -77,9 +79,13 @@ form.addEventListener('submit', e =>{
     } 
 
     newLi.addEventListener('click', e=>{
-        characterImage.src = newCharacter.img
-                characterImage.alt = `${newCharacter.name} image`
-    })
+    //     characterImage.src = newCharacter.img
+    //             characterImage.alt = `${newCharacter.name} image`
+    cardContainer.querySelector('h2').innerText = newCharacter.name
+            cardContainer.querySelector('img').src = newCharacter.img
+            cardContainer.querySelector('img').alt = `${newCharacter.name} image`
+            cardContainer.querySelector('p').innerText = `On the ${newCharacter.side} Side - Born in: ${newCharacter.birth_year} - Stands: ${newCharacter.height} cm tall`
+     })
     characterList.append(newLi)
     
     fetch(`http://localhost:3000/people`, {
@@ -88,7 +94,9 @@ form.addEventListener('submit', e =>{
         body: JSON.stringify({
             name: `${newCharacter.name}`,
             side: `${newCharacter.side}`,
-            image: `${newCharacter.img}`,
+            image: `${newCharacter.img}`, 
+            height: `${newCharacter.height}`,
+            birth_year: `${newCharacter.birthYear}`
         })
     })
 })

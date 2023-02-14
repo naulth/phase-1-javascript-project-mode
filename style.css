@@ -43,6 +43,9 @@ p{
   margin: 1rem 2rem;
   box-shadow: 3px 4px yellow;
   position: absolute;
+  top: 500; 
+  right: 200;
+
 }
 
 img{
@@ -54,7 +57,7 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 75px;
   text-align: center;
-  padding-top: 100px;
+  /*padding-top: 100px;*/
   color: yellow;
 }
 
@@ -87,10 +90,12 @@ input {
 
 /* The switch - the box around the slider */
 .switch {
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 60px;
     height: 34px;
+    left: 800;
+    top: 475;
   }
   
   /* Hide default HTML checkbox */
@@ -108,7 +113,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: yellow;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -120,7 +125,7 @@ input {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -147,4 +152,9 @@ input {
   .slider.round:before {
     border-radius: 50%;
   }
- 
+  
+  #character-list {
+    position: absolute;
+    top: 500;
+    left: 700;
+  }

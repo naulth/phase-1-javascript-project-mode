@@ -294,6 +294,14 @@
       "side": "dark",
       "image": "no url",
       "id": 11
+    },
+    {
+      "name": "Coldtrooper",
+      "side": "Light",
+      "image": "no url ",
+      "height": "180",
+      "birth_year": "undefined",
+      "id": 12
     }
   ]
 }
