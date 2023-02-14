@@ -43,7 +43,7 @@ function renderCharacters(array){
            // characterImage.src = character.image 
             //characterImage.alt = `${character.name} image`
         })
-        if (character.side === "light"){
+        if (character.side === "light" || character.side === "Light"){
             characterLi.className = "light"
         } else{
             characterLi.className = "dark"
