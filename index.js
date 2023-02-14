@@ -4,7 +4,6 @@ const toggleButton = document.getElementById('toggle')
 const darkSide = document.getElementsByClassName('dark')
 const form = document.getElementById('character-form')   
 
-const modeBtn = document.getElementById('mode');
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -31,15 +30,6 @@ function renderCharacters(array){
     })
 }
 
-//What if we change this to a dropdown menu.
-//We could select either Light or Dark
-//An if statement would determine which characters show up, and which are display: none
-// toggleButton.addEventListener('change', e =>{
-//     let darkArray = Array.from(darkSide)
-//     darkArray.forEach(character => {
-//         character.style.display = "none"
-//     })
-// })   
 toggleButton.addEventListener('change', e =>{
     if (toggleButton.checked === true) {
         let darkArray = Array.from(darkSide)
@@ -60,6 +50,7 @@ form.addEventListener('submit', e =>{
     let newCharacter = document.createElement('object')
     newCharacter.name = e.target.name.value
     newCharacter.img = e.target.image.value
+    newCharacter.side = e.target.side.value
     
     let newLi = document.createElement('li')
     newLi.textContent = newCharacter.name
@@ -76,4 +67,16 @@ form.addEventListener('submit', e =>{
                 characterImage.alt = `${newCharacter.name} image`
     })
     characterList.append(newLi)
+    
+    fetch(`http://localhost:3000/people`, {
+        method: 'POST',
+        headers: {"Content-type": "application/json"},
+        body: JSON.stringify({
+            name: `${newCharacter.name}`,
+            side: `${newCharacter.side}`,
+            image: `${newCharacter.img}`,
+        })
+        
+    })
+
 })

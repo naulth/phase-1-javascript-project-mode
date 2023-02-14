@@ -1,303 +1,299 @@
-{ "people":
-[
 {
-    "name": "Luke Skywalker", 
-    "height": "172", 
-    "mass": "77", 
-    "hair_color": "blond", 
-    "skin_color": "fair",
-    "side": "light", 
-    "eye_color": "blue", 
-    "birth_year": "19BBY", 
-    "gender": "male", 
-    "homeworld": "https://swapi.dev/api/planets/1/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
+  "people": [
+    {
+      "id": 1,
+      "name": "Luke Skywalker",
+      "height": "172",
+      "mass": "77",
+      "hair_color": "blond",
+      "skin_color": "fair",
+      "side": "light",
+      "eye_color": "blue",
+      "birth_year": "19BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/1/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [], 
-    "vehicles": [
-        "https://swapi.dev/api/vehicles/14/", 
+      ],
+      "species": [],
+      "vehicles": [
+        "https://swapi.dev/api/vehicles/14/",
         "https://swapi.dev/api/vehicles/30/"
-    ], 
-    "starships": [
-        "https://swapi.dev/api/starships/12/", 
+      ],
+      "starships": [
+        "https://swapi.dev/api/starships/12/",
         "https://swapi.dev/api/starships/22/"
-    ], 
-    "created": "2014-12-09T13:50:51.644000Z", 
-    "edited": "2014-12-20T21:17:56.891000Z",
-    "image": "https://lumiere-a.akamaihd.net/v1/images/Lightsaber_853fb596.jpeg?region=178%2C0%2C813%2C812", 
-    "url": "https://swapi.dev/api/people/1/"
-}, 
-{
-    "name": "C-3PO", 
-    "height": "167", 
-    "mass": "75", 
-    "hair_color": "n/a", 
-    "skin_color": "gold",
-    "side": "light",
-    "eye_color": "yellow", 
-    "birth_year": "112BBY", 
-    "gender": "n/a", 
-    "homeworld": "https://swapi.dev/api/planets/1/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
-        "https://swapi.dev/api/films/4/", 
-        "https://swapi.dev/api/films/5/", 
+      ],
+      "created": "2014-12-09T13:50:51.644000Z",
+      "edited": "2014-12-20T21:17:56.891000Z",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/Lightsaber_853fb596.jpeg?region=178%2C0%2C813%2C812",
+      "url": "https://swapi.dev/api/people/1/"
+    },
+    {
+      "id": 2,
+      "name": "C-3PO",
+      "height": "167",
+      "mass": "75",
+      "hair_color": "n/a",
+      "skin_color": "gold",
+      "side": "light",
+      "eye_color": "yellow",
+      "birth_year": "112BBY",
+      "gender": "n/a",
+      "homeworld": "https://swapi.dev/api/planets/1/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/4/",
+        "https://swapi.dev/api/films/5/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [
+      ],
+      "species": [
         "https://swapi.dev/api/species/2/"
-    ], 
-    "vehicles": [], 
-    "starships": [], 
-    "created": "2014-12-10T15:10:51.357000Z", 
-    "edited": "2014-12-20T21:17:50.309000Z",
-    "image": "https://static.wikia.nocookie.net/starwars/images/0/02/C3PO-TROSposter.png/revision/latest?cb=20221128061135", 
-    "url": "https://swapi.dev/api/people/2/"
-}, 
-{
-    "name": "R2-D2", 
-    "height": "96", 
-    "mass": "32", 
-    "hair_color": "n/a", 
-    "skin_color": "white, blue",
-    "side": "light", 
-    "eye_color": "red", 
-    "birth_year": "33BBY", 
-    "gender": "n/a", 
-    "homeworld": "https://swapi.dev/api/planets/8/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
-        "https://swapi.dev/api/films/4/", 
-        "https://swapi.dev/api/films/5/", 
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:10:51.357000Z",
+      "edited": "2014-12-20T21:17:50.309000Z",
+      "image": "https://static.wikia.nocookie.net/starwars/images/0/02/C3PO-TROSposter.png/revision/latest?cb=20221128061135",
+      "url": "https://swapi.dev/api/people/2/"
+    },
+    {
+      "id": 3,
+      "name": "R2-D2",
+      "height": "96",
+      "mass": "32",
+      "hair_color": "n/a",
+      "skin_color": "white, blue",
+      "side": "light",
+      "eye_color": "red",
+      "birth_year": "33BBY",
+      "gender": "n/a",
+      "homeworld": "https://swapi.dev/api/planets/8/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/4/",
+        "https://swapi.dev/api/films/5/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [
+      ],
+      "species": [
         "https://swapi.dev/api/species/2/"
-    ], 
-    "vehicles": [], 
-    "starships": [], 
-    "created": "2014-12-10T15:11:50.376000Z", 
-    "edited": "2014-12-20T21:17:50.311000Z", 
-    "image": "https://static.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png/revision/latest?cb=20161108040914",
-    "url": "https://swapi.dev/api/people/3/"
-}, 
-
-{
-    "name": "Leia Organa", 
-    "height": "150", 
-    "mass": "49", 
-    "hair_color": "brown", 
-    "skin_color": "light", 
-    "side": "light",
-    "eye_color": "brown", 
-    "birth_year": "19BBY", 
-    "gender": "female", 
-    "homeworld": "https://swapi.dev/api/planets/2/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:11:50.376000Z",
+      "edited": "2014-12-20T21:17:50.311000Z",
+      "image": "https://static.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png/revision/latest?cb=20161108040914",
+      "url": "https://swapi.dev/api/people/3/"
+    },
+    {
+      "id": 4,
+      "name": "Leia Organa",
+      "height": "150",
+      "mass": "49",
+      "hair_color": "brown",
+      "skin_color": "light",
+      "side": "light",
+      "eye_color": "brown",
+      "birth_year": "19BBY",
+      "gender": "female",
+      "homeworld": "https://swapi.dev/api/planets/2/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [], 
-    "vehicles": [
+      ],
+      "species": [],
+      "vehicles": [
         "https://swapi.dev/api/vehicles/30/"
-    ], 
-    "starships": [], 
-    "created": "2014-12-10T15:20:09.791000Z", 
-    "edited": "2014-12-20T21:17:50.315000Z",
-    "image": "https://static.wikia.nocookie.net/p__/images/c/c9/Princess_Leia_Organa.png/revision/latest?cb=20200413162105&path-prefix=protagonist", 
-    "url": "https://swapi.dev/api/people/5/"
-},  
-{
-    "name": "Obi-Wan Kenobi", 
-    "height": "182", 
-    "mass": "77", 
-    "hair_color": "auburn, white", 
-    "skin_color": "fair", 
-    "side": "light",
-    "eye_color": "blue-gray", 
-    "birth_year": "57BBY", 
-    "gender": "male", 
-    "homeworld": "https://swapi.dev/api/planets/20/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
-        "https://swapi.dev/api/films/4/", 
-        "https://swapi.dev/api/films/5/", 
+      ],
+      "starships": [],
+      "created": "2014-12-10T15:20:09.791000Z",
+      "edited": "2014-12-20T21:17:50.315000Z",
+      "image": "https://static.wikia.nocookie.net/p__/images/c/c9/Princess_Leia_Organa.png/revision/latest?cb=20200413162105&path-prefix=protagonist",
+      "url": "https://swapi.dev/api/people/5/"
+    },
+    {
+      "id": 5,
+      "name": "Obi-Wan Kenobi",
+      "height": "182",
+      "mass": "77",
+      "hair_color": "auburn, white",
+      "skin_color": "fair",
+      "side": "light",
+      "eye_color": "blue-gray",
+      "birth_year": "57BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/20/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/4/",
+        "https://swapi.dev/api/films/5/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [], 
-    "vehicles": [
+      ],
+      "species": [],
+      "vehicles": [
         "https://swapi.dev/api/vehicles/38/"
-    ], 
-    "starships": [
-        "https://swapi.dev/api/starships/48/", 
-        "https://swapi.dev/api/starships/59/", 
-        "https://swapi.dev/api/starships/64/", 
-        "https://swapi.dev/api/starships/65/", 
+      ],
+      "starships": [
+        "https://swapi.dev/api/starships/48/",
+        "https://swapi.dev/api/starships/59/",
+        "https://swapi.dev/api/starships/64/",
+        "https://swapi.dev/api/starships/65/",
         "https://swapi.dev/api/starships/74/"
-    ], 
-    "created": "2014-12-10T16:16:29.192000Z", 
-    "edited": "2014-12-20T21:17:50.325000Z",
-    "image": "https://static.wikia.nocookie.net/thestarwarscanon/images/0/0f/Obi-Wan_Kenobi.png/revision/latest?cb=20200528020209", 
-    "url": "https://swapi.dev/api/people/10/"
-},
-{
-    "name": "Darth Vader", 
-    "height": "202", 
-    "mass": "136", 
-    "hair_color": "none", 
-    "skin_color": "white",
-    "side": "dark", 
-    "eye_color": "yellow", 
-    "birth_year": "41.9BBY", 
-    "gender": "male", 
-    "homeworld": "https://swapi.dev/api/planets/1/", 
-    "films": [
-        "https://swapi.dev/api/films/1/", 
-        "https://swapi.dev/api/films/2/", 
-        "https://swapi.dev/api/films/3/", 
+      ],
+      "created": "2014-12-10T16:16:29.192000Z",
+      "edited": "2014-12-20T21:17:50.325000Z",
+      "image": "https://static.wikia.nocookie.net/thestarwarscanon/images/0/0f/Obi-Wan_Kenobi.png/revision/latest?cb=20200528020209",
+      "url": "https://swapi.dev/api/people/10/"
+    },
+    {
+      "id": 6,
+      "name": "Darth Vader",
+      "height": "202",
+      "mass": "136",
+      "hair_color": "none",
+      "skin_color": "white",
+      "side": "dark",
+      "eye_color": "yellow",
+      "birth_year": "41.9BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/1/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
         "https://swapi.dev/api/films/6/"
-    ], 
-    "species": [], 
-    "vehicles": [], 
-    "starships": [
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
         "https://swapi.dev/api/starships/13/"
-    ], 
-    "created": "2014-12-10T15:18:20.704000Z", 
-    "edited": "2014-12-20T21:17:50.313000Z", 
-    "image": "https://tamashiiweb.com/images/item/item_0000012972_EgMVOjbS_101.jpg",
-    "url": "https://swapi.dev/api/people/4/"
-}, 
-{
-    "name": "Wilhuff Tarkin",
-    "height": "180",
-    "mass": "unknown",
-    "hair_color": "auburn, grey",
-    "skin_color": "fair",
-    "side": "dark",
-    "eye_color": "blue",
-    "birth_year": "64BBY",
-    "gender": "male",
-    "homeworld": "https://swapi.dev/api/planets/21/",
-    "films": [
-      "https://swapi.dev/api/films/1/",
-      "https://swapi.dev/api/films/6/"
-    ],
-    "species": [
-      
-    ],
-    "vehicles": [
-      
-    ],
-    "starships": [
-      
-    ],
-    "created": "2014-12-10T16:26:56.138000Z",
-    "edited": "2014-12-20T21:17:50.330000Z",
-    "image": "https://static.wikia.nocookie.net/starwars/images/c/c1/Tarkin1.png/revision/latest?cb=20130304023051",
-    "url": "https://swapi.dev/api/people/12/"
-  },
-  {
-    "name": "Jabba Desilijic Tiure",
-    "height": "175",
-    "mass": "1,358",
-    "hair_color": "n/a",
-    "skin_color": "green-tan, brown",
-    "side": "dark",
-    "eye_color": "orange",
-    "birth_year": "600BBY",
-    "gender": "hermaphrodite",
-    "homeworld": "https://swapi.dev/api/planets/24/",
-    "films": [
-      "https://swapi.dev/api/films/1/",
-      "https://swapi.dev/api/films/3/",
-      "https://swapi.dev/api/films/4/"
-    ],
-    "species": [
-      "https://swapi.dev/api/species/5/"
-    ],
-    "vehicles": [
-      
-    ],
-    "starships": [
-      
-    ],
-    "created": "2014-12-10T17:11:31.638000Z",
-    "edited": "2014-12-20T21:17:50.338000Z",
-    "image": "https://lumiere-a.akamaihd.net/v1/images/image_991736d0.jpeg?region=0%2C0%2C1560%2C878",
-    "url": "https://swapi.dev/api/people/16/"
-  },
-  {
-    "name": "Palpatine",
-    "height": "170",
-    "mass": "75",
-    "hair_color": "grey",
-    "skin_color": "pale",
-    "side": "dark",
-    "eye_color": "yellow",
-    "birth_year": "82BBY",
-    "gender": "male",
-    "homeworld": "https://swapi.dev/api/planets/8/",
-    "films": [
-      "https://swapi.dev/api/films/2/",
-      "https://swapi.dev/api/films/3/",
-      "https://swapi.dev/api/films/4/",
-      "https://swapi.dev/api/films/5/",
-      "https://swapi.dev/api/films/6/"
-    ],
-    "species": [
-      
-    ],
-    "vehicles": [
-      
-    ],
-    "starships": [
-      
-    ],
-    "created": "2014-12-15T12:48:05.971000Z",
-    "edited": "2014-12-20T21:17:50.347000Z",
-    "image": "https://winteriscoming.net/files/2019/01/emperor-palpatine-star-wars-return-of-the-jedi.jpg",
-    "url": "https://swapi.dev/api/people/21/"
-  },
-  {
-    "name": "Boba Fett",
-    "height": "183",
-    "mass": "78.2",
-    "hair_color": "black",
-    "skin_color": "fair",
-    "side": "dark",
-    "eye_color": "brown",
-    "birth_year": "31.5BBY",
-    "gender": "male",
-    "homeworld": "https://swapi.dev/api/planets/10/",
-    "films": [
-      "https://swapi.dev/api/films/2/",
-      "https://swapi.dev/api/films/3/",
-      "https://swapi.dev/api/films/5/"
-    ],
-    "species": [
-      
-    ],
-    "vehicles": [
-      
-    ],
-    "starships": [
-      "https://swapi.dev/api/starships/21/"
-    ],
-    "created": "2014-12-15T12:49:32.457000Z",
-    "edited": "2014-12-20T21:17:50.349000Z",
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/3e/FettbobaJB.png",
-    "url": "https://swapi.dev/api/people/22/"
-  }
-]}
+      ],
+      "created": "2014-12-10T15:18:20.704000Z",
+      "edited": "2014-12-20T21:17:50.313000Z",
+      "image": "https://tamashiiweb.com/images/item/item_0000012972_EgMVOjbS_101.jpg",
+      "url": "https://swapi.dev/api/people/4/"
+    },
+    {
+      "id": 7,
+      "name": "Wilhuff Tarkin",
+      "height": "180",
+      "mass": "unknown",
+      "hair_color": "auburn, grey",
+      "skin_color": "fair",
+      "side": "dark",
+      "eye_color": "blue",
+      "birth_year": "64BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/21/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T16:26:56.138000Z",
+      "edited": "2014-12-20T21:17:50.330000Z",
+      "image": "https://static.wikia.nocookie.net/starwars/images/c/c1/Tarkin1.png/revision/latest?cb=20130304023051",
+      "url": "https://swapi.dev/api/people/12/"
+    },
+    {
+      "id": 8,
+      "name": "Jabba Desilijic Tiure",
+      "height": "175",
+      "mass": "1,358",
+      "hair_color": "n/a",
+      "skin_color": "green-tan, brown",
+      "side": "dark",
+      "eye_color": "orange",
+      "birth_year": "600BBY",
+      "gender": "hermaphrodite",
+      "homeworld": "https://swapi.dev/api/planets/24/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/4/"
+      ],
+      "species": [
+        "https://swapi.dev/api/species/5/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T17:11:31.638000Z",
+      "edited": "2014-12-20T21:17:50.338000Z",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/image_991736d0.jpeg?region=0%2C0%2C1560%2C878",
+      "url": "https://swapi.dev/api/people/16/"
+    },
+    {
+      "id": 9,
+      "name": "Palpatine",
+      "height": "170",
+      "mass": "75",
+      "hair_color": "grey",
+      "skin_color": "pale",
+      "side": "dark",
+      "eye_color": "yellow",
+      "birth_year": "82BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/8/",
+      "films": [
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/4/",
+        "https://swapi.dev/api/films/5/",
+        "https://swapi.dev/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-15T12:48:05.971000Z",
+      "edited": "2014-12-20T21:17:50.347000Z",
+      "image": "https://winteriscoming.net/files/2019/01/emperor-palpatine-star-wars-return-of-the-jedi.jpg",
+      "url": "https://swapi.dev/api/people/21/"
+    },
+    {
+      "id": 10,
+      "name": "Boba Fett",
+      "height": "183",
+      "mass": "78.2",
+      "hair_color": "black",
+      "skin_color": "fair",
+      "side": "dark",
+      "eye_color": "brown",
+      "birth_year": "31.5BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/10/",
+      "films": [
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/5/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "https://swapi.dev/api/starships/21/"
+      ],
+      "created": "2014-12-15T12:49:32.457000Z",
+      "edited": "2014-12-20T21:17:50.349000Z",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3e/FettbobaJB.png",
+      "url": "https://swapi.dev/api/people/22/"
+    },
+    {
+      "name": "anikan",
+      "side": "dark",
+      "image": "no url",
+      "id": 11
+    }
+  ]
+}
