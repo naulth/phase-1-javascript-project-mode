@@ -3,7 +3,7 @@ const characterImage = document.getElementById('character-image')
 const toggleButton = document.getElementById('toggle')
 const darkSide = document.getElementsByClassName('dark')
 const form = document.getElementById('character-form')   
-
+const cardContainer = document.getElementById('card')
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -19,8 +19,22 @@ function renderCharacters(array){
         characterList.append(characterLi)
 
         characterLi.addEventListener('click', e =>{
-            characterImage.src = character.image 
-            characterImage.alt = `${character.name} image`
+            // const div = document.createElement('div')
+            // div.className = 'card'
+            // div.innerHTML = `
+            // <h2> </h2>
+            // <img />
+            // <p> </p>
+            // `
+            cardContainer.querySelector('h2').innerText = character.name
+            cardContainer.querySelector('img').src = character.image
+            cardContainer.querySelector('img').alt = `${character.name} image`
+            cardContainer.querySelector('p').innerText = `On the ${character.side} Side - Born in: ${character.birth_year} - Stands: ${character.height} cm tall`
+            
+            //cardContainer.append(div)
+            
+           // characterImage.src = character.image 
+            //characterImage.alt = `${character.name} image`
         })
         if (character.side === "light"){
             characterLi.className = "light"
@@ -76,7 +90,5 @@ form.addEventListener('submit', e =>{
             side: `${newCharacter.side}`,
             image: `${newCharacter.img}`,
         })
-        
     })
-
 })

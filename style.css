@@ -8,6 +8,12 @@
     color: white;
 }
 
+ body{
+  background-image: url('https://i.pinimg.com/originals/d7/a6/11/d7a61190a836bdcfc62bf97af4f4c74b.png');
+  height: 100%;
+  width: auto;
+} 
+
 li{
     list-style-type: none;
     padding: 10px;
@@ -16,6 +22,28 @@ li{
 }
 
 
+
+
+
+h2{
+  color: yellow;
+}
+
+p{
+  color: yellow;
+}
+
+#card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px yellow;
+  position: absolute;
+}
 
 img{
     height: 20rem;
@@ -27,6 +55,7 @@ h1 {
   font-size: 75px;
   text-align: center;
   padding-top: 100px;
+  color: yellow;
 }
 
 .box {
@@ -35,7 +64,7 @@ h1 {
 }
 
 #main {
-  text-align: center;
+  text-align: left;
   width: 80%;
   margin: auto;
 }
