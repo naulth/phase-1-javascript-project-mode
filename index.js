@@ -7,7 +7,8 @@ const cardContainer = document.getElementById('card')
 const lightSide = document.getElementsByClassName('light')
 const resetBtn = document.getElementById('reset')
 const allChars = document.getElementsByClassName('char')
-
+const audioElement= document.getElementById("music")
+audioElement.muted = true
 
 
 fetch('http://localhost:3000/people')
@@ -51,29 +52,35 @@ function renderCharacters(array){
 }
 
 toggleButton.addEventListener('change', e =>{
-    if (toggleButton.checked === true) {
-        let darkArray = Array.from(darkSide)
-            darkArray.forEach(character => {
-                character.style.display = "none"
-            })
-            } else {
-            let darkArray = Array.from(darkSide)
-                darkArray.forEach(character => {
-                character.style.display = "block"
-            })
+    // if (toggleButton.checked === true) {
+    //     let darkArray = Array.from(darkSide)
+    //         darkArray.forEach(character => {
+    //             character.style.display = "none"
+    //         })
+    //         } else {
+    //         let darkArray = Array.from(darkSide)
+    //             darkArray.forEach(character => {
+    //             character.style.display = "block"
+    //         })
+    // }
+    // if (toggleButton.checked === false) {
+    //     let lightArray = Array.from(lightSide)
+    //         lightArray.forEach(character => {
+    //             character.style.display = "none"
+    //         })
+    //         } else {
+    //         let lightArray = Array.from(lightSide)
+    //             lightArray.forEach(character => {
+    //             character.style.display = "block"
+    //         })
+    // }
+    if (toggleButton.checked === true){
+        audioElement.play()
+        audioElement.muted = false
+    } else {
+        audioElement.pause()
+        audioElement.muted = true
     }
-    if (toggleButton.checked === false) {
-        let lightArray = Array.from(lightSide)
-            lightArray.forEach(character => {
-                character.style.display = "none"
-            })
-            } else {
-            let lightArray = Array.from(lightSide)
-                lightArray.forEach(character => {
-                character.style.display = "block"
-            })
-    }
-
 })
 
 const dropdown = document.getElementById('character-dropdown')
@@ -86,7 +93,7 @@ const characterLis = characterList.children
 // console.log(charArray)
 //let characterLi = document.getElementById('character-list').children
 
-dropdown.addEventListener('change', function sortBreeds(e) {
+dropdown.addEventListener('change', function characters(e) {
     Array.from(characterLis).forEach(li => {
         console.log(li)
         if (li.className === e.target.value){
