@@ -12,6 +12,11 @@ audioElement.muted = true
 const newForm = document.getElementById('edit-form')
 const scrollBtn = document.getElementById('scrollBtn')
 const babyYoda = document.getElementById('baby-yoda')
+const logo = document.getElementById('logo-image')
+const formTitle = document.getElementById('form-title')
+const submitBtn = document.getElementById('submit')
+const footer = document.getElementById('footer')
+
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -79,9 +84,33 @@ toggleButton.addEventListener('change', e =>{
     if (toggleButton.checked === true){
         audioElement.play()
         audioElement.muted = false
+
+        scrollBtn.style.backgroundColor =  "red"
+        logo.src = "https://static.wikia.nocookie.net/logopedia/images/a/a6/Star_Wars_%28Red%29.svg/revision/latest/scale-to-width-down/250?cb=20191125162454"
+        formTitle.style.color = "red"
+        submitBtn.style.backgroundColor = "red"
+        submitBtn.style.color = "white"
+        dropdown.style.border = "solid 2px red"
+        //characterLis.style.border = "#red solid 1px"
+        cardContainer.style.border ="red solid 1px"
+        cardContainer.style.boxShadow = " 3px 4px red"
+        footer.style.color = "red"
+
     } else {
         audioElement.pause()
         audioElement.muted = true
+
+        scrollBtn.style.backgroundColor =  "#FFE81F"
+        logo.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Star_Wars_Logo..png/640px-Star_Wars_Logo..png"
+        formTitle.style.color = "#FFE81F"
+        submitBtn.style.backgroundColor = "#FFE81F"
+        submitBtn.style.color = "black"
+        dropdown.style.border = "solid 2px #FFE81F"
+        //characterLis.style.border = "#FFE81F solid 1px"
+        cardContainer.style.border ="#FFE81F solid 1px"
+        cardContainer.style.boxShadow = " 3px 4px #FFE81F"
+        footer.style.color = "#FFE81F"
+
     }
 })
 
