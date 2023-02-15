@@ -202,7 +202,7 @@ form.addEventListener('submit', e =>{
     })
 })
 scrollBtn.addEventListener('click', e => {
-    window.scrollBy(0,500)
+    window.scrollBy(0,600)
 
 })
 
