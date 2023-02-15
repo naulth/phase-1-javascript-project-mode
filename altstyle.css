@@ -1,0 +1,205 @@
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+ body{
+  background-image: url('https://thumbs.gfycat.com/EagerGentleAxolotl-max-1mb.gif');
+  height: 100%;
+  width: auto;
+} 
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    border: #FFE81F solid 1px;
+}
+
+#card-image {
+  text-align:center;
+}
+
+#logo-image{
+    position: absolute;
+    top: 300;
+    left: 200;
+}
+
+h2{
+  color: #FFE81F;
+}
+
+p{
+  color: #FFE81F;
+}
+
+#card {
+  text-align: center;
+  border: #FFE81F solid 1px;
+  padding: 1rem;
+  width: 575px;
+  height: auto;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #FFE81F;
+  position: absolute;
+  top: 1000; 
+  right: 100;
+  background-color: black;
+}
+
+img{
+  text-align: center;
+    height: 20rem;
+    width: auto;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 75px;
+  text-align: center;
+  /*padding-top: 100px;*/
+  color: white;
+  top: 550;
+  left: 220;
+}
+
+.box {
+  display: inline-block;
+  padding: 30px;
+}
+
+#main {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  color: #FFE81F;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+h4 {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  top: 660;
+  left: 320;
+}
+
+input {
+  width: 100%;
+  margin: auto;
+  border: solid 1px black;
+}
+
+#submit {
+  background-color: #FFE81F;
+  color: black;
+}
+
+#character-dropdown {
+  background-color: black;
+  color: white;
+  border: solid 2px #FFE81F;
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+  left: 525;
+  top: 1015;
+}
+
+
+#character-form{
+  position: absolute;
+    left: 200;
+    top: 985;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 220;
+    top: 700;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFE81F;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #fb0101;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #fb0101;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #character-list {
+    position: absolute;
+    top: 1000;
+    left: 600;
+    columns:2;
+  }
+   #edit-form{
+    position: absolute;
+    left: 300;
+    top: 720;
+  } 
