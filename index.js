@@ -96,6 +96,10 @@ toggleButton.addEventListener('change', e =>{
         cardContainer.style.boxShadow = " 3px 4px red"
         footer.style.color = "red"
 
+        Array.from(characterLis).forEach(li => {
+            li.style.border = "red solid 1px"
+        })
+
     } else {
         audioElement.pause()
         audioElement.muted = true
@@ -110,6 +114,10 @@ toggleButton.addEventListener('change', e =>{
         cardContainer.style.border ="#FFE81F solid 1px"
         cardContainer.style.boxShadow = " 3px 4px #FFE81F"
         footer.style.color = "#FFE81F"
+
+        Array.from(characterLis).forEach(li => {
+            li.style.border = "#FFE81F solid 1px"
+        })
 
     }
 })
