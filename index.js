@@ -96,6 +96,8 @@ toggleButton.addEventListener('change', e =>{
         cardContainer.style.boxShadow = " 3px 4px red"
         footer.style.color = "red"
 
+        babyYoda.src = "https://www.pngkey.com/png/full/124-1240061_death-star-2-png-graphic-death-star-star.png"
+
         Array.from(characterLis).forEach(li => {
             li.style.border = "red solid 1px"
         })
@@ -114,6 +116,9 @@ toggleButton.addEventListener('change', e =>{
         cardContainer.style.border ="#FFE81F solid 1px"
         cardContainer.style.boxShadow = " 3px 4px #FFE81F"
         footer.style.color = "#FFE81F"
+
+        babyYoda.src = "https://www.pngmart.com/files/11/Baby-Yoda-PNG-Transparent.png"
+
 
         Array.from(characterLis).forEach(li => {
             li.style.border = "#FFE81F solid 1px"
