@@ -226,3 +226,11 @@ input {
   html{
     scroll-behavior: smooth;
   }
+
+  /* Baby yoday image */
+  #baby-yoda{
+    position: absolute;
+    top: 300;
+    right:200;
+    opacity: 0;
+  }

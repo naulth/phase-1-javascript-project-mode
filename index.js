@@ -11,7 +11,7 @@ const audioElement= document.getElementById("music")
 audioElement.muted = true
 const newForm = document.getElementById('edit-form')
 const scrollBtn = document.getElementById('scrollBtn')
-
+const babyYoda = document.getElementById('baby-yoda')
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -167,6 +167,14 @@ form.addEventListener('submit', e =>{
 scrollBtn.addEventListener('click', e => {
     window.scrollBy(0,500)
 
+})
+
+babyYoda.addEventListener("mouseover", e => {
+    e.target.style.opacity = 1
+})
+
+babyYoda.addEventListener("mouseout", e => {
+    e.target.style.opacity = 0
 })
 
 
