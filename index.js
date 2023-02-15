@@ -16,6 +16,7 @@ const logo = document.getElementById('logo-image')
 const formTitle = document.getElementById('form-title')
 const submitBtn = document.getElementById('submit')
 const footer = document.getElementById('footer')
+const scrollSound = document.getElementById('scrollSound')
 
 
 fetch('http://localhost:3000/people')
@@ -208,6 +209,7 @@ form.addEventListener('submit', e =>{
 })
 scrollBtn.addEventListener('click', e => {
     window.scrollBy(0,600)
+    scrollSound.play()
 
 })
 
