@@ -165,7 +165,7 @@ form.addEventListener('submit', e =>{
     })
 })
 scrollBtn.addEventListener('click', e => {
-    window.location.href = "#character-dropdown"
+    window.scrollBy(0,500)
 
 })
 

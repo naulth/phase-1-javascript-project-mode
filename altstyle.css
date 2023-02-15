@@ -215,6 +215,12 @@ input {
     top: 770;
     left: 220;
     background-color: #FFE81F;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
   }
 
   html{
