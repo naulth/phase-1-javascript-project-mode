@@ -10,6 +10,8 @@ const allChars = document.getElementsByClassName('char')
 const audioElement= document.getElementById("music")
 audioElement.muted = true
 const newForm = document.getElementById('edit-form')
+const scrollBtn = document.getElementById('scrollBtn')
+
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -161,6 +163,10 @@ form.addEventListener('submit', e =>{
             birth_year: `${newCharacter.birthYear}`
         })
     })
+})
+scrollBtn.addEventListener('click', e => {
+    window.location.href = "#character-dropdown"
+
 })
 
 

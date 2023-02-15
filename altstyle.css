@@ -15,6 +15,7 @@
 } 
 
 li{
+  border-radius: 4px;
     list-style-type: none;
     padding: 10px;
     font-size: 20px;
@@ -40,6 +41,7 @@ p{
 }
 
 #card {
+  border-radius: 4px;
   text-align: center;
   border: #FFE81F solid 1px;
   padding: 1rem;
@@ -98,6 +100,7 @@ h4 {
 }
 
 input {
+  border-radius: 4px;
   width: 100%;
   margin: auto;
   border: solid 1px black;
@@ -109,6 +112,7 @@ input {
 }
 
 #character-dropdown {
+  border-radius: 4px;
   background-color: black;
   color: white;
   border: solid 2px #FFE81F;
@@ -122,6 +126,7 @@ input {
 
 
 #character-form{
+  
   position: absolute;
     left: 200;
     top: 985;
@@ -193,6 +198,7 @@ input {
   }
   
   #character-list {
+    
     position: absolute;
     top: 1000;
     left: 600;
@@ -203,3 +209,14 @@ input {
     left: 300;
     top: 720;
   } 
+
+  #scrollBtn{
+    position: absolute;
+    top: 770;
+    left: 220;
+    background-color: #FFE81F;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }

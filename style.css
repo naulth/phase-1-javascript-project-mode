@@ -36,6 +36,7 @@ p{
 }
 
 #card {
+  
   text-align: center;
   border: #FFE81F solid 1px;
   padding: 1rem;
@@ -105,6 +106,7 @@ input {
 }
 
 #character-dropdown {
+  
   background-color: black;
   color: white;
   border: solid 2px #FFE81F;
@@ -197,3 +199,4 @@ input {
     left: 300;
     top: 720;
   } 
+  
