@@ -17,7 +17,8 @@ const formTitle = document.getElementById('form-title')
 const submitBtn = document.getElementById('submit')
 const footer = document.getElementById('footer')
 const scrollSound = document.getElementById('scrollSound')
-
+const dropdown = document.getElementById('character-dropdown')
+const characterLis = characterList.children
 
 fetch('http://localhost:3000/people')
     .then(r => r.json())
@@ -34,22 +35,10 @@ function renderCharacters(array){
         characterLi.setAttribute("id", `${character.id}`)
 
         characterLi.addEventListener('click', e =>{
-            // const div = document.createElement('div')
-            // div.className = 'card'
-            // div.innerHTML = `
-            // <h2> </h2>
-            // <img />
-            // <p> </p>
-            // `
             cardContainer.querySelector('h2').innerText = character.name
             cardContainer.querySelector('img').src = character.image
             cardContainer.querySelector('img').alt = `${character.name} image`
             cardContainer.querySelector('p').innerText = `On the ${character.side} Side - Born in: ${character.birth_year} - Stands: ${character.height} cm tall`
-            
-            //cardContainer.append(div)
-            
-           // characterImage.src = character.image 
-            //characterImage.alt = `${character.name} image`
         })
         if (character.side === "light" || character.side === "Light"){
             characterLi.className = "light"
@@ -60,28 +49,6 @@ function renderCharacters(array){
 }
 
 toggleButton.addEventListener('change', e =>{
-    // if (toggleButton.checked === true) {
-    //     let darkArray = Array.from(darkSide)
-    //         darkArray.forEach(character => {
-    //             character.style.display = "none"
-    //         })
-    //         } else {
-    //         let darkArray = Array.from(darkSide)
-    //             darkArray.forEach(character => {
-    //             character.style.display = "block"
-    //         })
-    // }
-    // if (toggleButton.checked === false) {
-    //     let lightArray = Array.from(lightSide)
-    //         lightArray.forEach(character => {
-    //             character.style.display = "none"
-    //         })
-    //         } else {
-    //         let lightArray = Array.from(lightSide)
-    //             lightArray.forEach(character => {
-    //             character.style.display = "block"
-    //         })
-    // }
     if (toggleButton.checked === true){
         audioElement.play()
         audioElement.muted = false
@@ -92,7 +59,6 @@ toggleButton.addEventListener('change', e =>{
         submitBtn.style.backgroundColor = "red"
         submitBtn.style.color = "white"
         dropdown.style.border = "solid 2px red"
-        //characterLis.style.border = "#red solid 1px"
         cardContainer.style.border ="red solid 1px"
         cardContainer.style.boxShadow = " 3px 4px red"
         footer.style.color = "red"
@@ -113,7 +79,6 @@ toggleButton.addEventListener('change', e =>{
         submitBtn.style.backgroundColor = "#FFE81F"
         submitBtn.style.color = "black"
         dropdown.style.border = "solid 2px #FFE81F"
-        //characterLis.style.border = "#FFE81F solid 1px"
         cardContainer.style.border ="#FFE81F solid 1px"
         cardContainer.style.boxShadow = " 3px 4px #FFE81F"
         footer.style.color = "#FFE81F"
@@ -127,16 +92,6 @@ toggleButton.addEventListener('change', e =>{
 
     }
 })
-
-const dropdown = document.getElementById('character-dropdown')
-const characterLis = characterList.children
-
-//console.log(characterLis)
-
-
-// charArray = Array.from(characterLis)
-// console.log(charArray)
-//let characterLi = document.getElementById('character-list').children
 
 dropdown.addEventListener('change', function characters(e) {
     Array.from(characterLis).forEach(li => {
@@ -154,16 +109,6 @@ dropdown.addEventListener('change', function characters(e) {
     
 })
 
-
-// resetBtn.addEventListener('click', e =>{
-//     lightArray.forEach(character => {
-//         character.style.display = "block"
-//     })
-//     darkArray.forEach(character => {
-//         character.style.display = "block"
-//     })
-// })
-
 form.addEventListener('submit', e =>{
     e.preventDefault()
     let newCharacter = document.createElement('object')
@@ -178,7 +123,6 @@ form.addEventListener('submit', e =>{
     newLi.className = "listLis"
     
 
-
     if(e.target.side.value == "Light" || e.target.side.value == "light"){
         newLi.className = "light"
     } else if (e.target.side.value == "Dark" || e.target.side.value == "dark"){
@@ -186,13 +130,11 @@ form.addEventListener('submit', e =>{
     } 
 
     newLi.addEventListener('click', e=>{
-    //     characterImage.src = newCharacter.img
-    //             characterImage.alt = `${newCharacter.name} image`
-    cardContainer.querySelector('h2').innerText = newCharacter.name
-            cardContainer.querySelector('img').src = newCharacter.img
-            cardContainer.querySelector('img').alt = `${newCharacter.name} image`
-            cardContainer.querySelector('p').innerText = `On the ${newCharacter.side} Side - Born in: ${newCharacter.birth_year} - Stands: ${newCharacter.height} cm tall`
-     })
+        cardContainer.querySelector('h2').innerText = newCharacter.name
+        cardContainer.querySelector('img').src = newCharacter.img
+        cardContainer.querySelector('img').alt = `${newCharacter.name} image`
+        cardContainer.querySelector('p').innerText = `On the ${newCharacter.side} Side - Born in: ${newCharacter.birth_year} - Stands: ${newCharacter.height} cm tall`
+    })
     characterList.append(newLi)
     
     fetch(`http://localhost:3000/people`, {
@@ -210,7 +152,6 @@ form.addEventListener('submit', e =>{
 scrollBtn.addEventListener('click', e => {
     window.scrollBy(0,600)
     scrollSound.play()
-
 })
 
 babyYoda.addEventListener("mouseover", e => {
@@ -220,9 +161,3 @@ babyYoda.addEventListener("mouseover", e => {
 babyYoda.addEventListener("mouseout", e => {
     e.target.style.opacity = 0
 })
-
-
-//hidden baby yoda
-//lightsaber on class select
-//toggle switch opacity
-//toggle switch to hide everything?

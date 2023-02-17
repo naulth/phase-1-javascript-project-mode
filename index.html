@@ -25,140 +25,88 @@
                 src = "https://www.pngmart.com/files/11/Baby-Yoda-PNG-Transparent.png"
                 alt = "Baby Yoda image"
             />
-        <h1>Character Info</h1>
-        <h4>
-            Toggle for music!
-        </h4>
-        <button id="scrollBtn"> Scroll to see characters! </button>
-            <div id="section">
-                <div class="box">
-                    <div>
-                    <!-- <label for="character-dropdown"><div style="color: white">Filter Characters By Alignment</div></label> -->
-                        <select id="character-dropdown" name="select-side">
-                            <option value="all">Show All</option>
-                            <option value="light">Light Side</option>
-                            <option value="dark">Dark Side</option>
-                        </select>
-                    
-                        <label class="switch">
-                            <input id = "toggle" type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
+            <h1>Character Info</h1>
+            <h4>
+                Toggle for music!
+            </h4>
+            <button id="scrollBtn"> Scroll to see characters! </button>
+                <div id="section">
+                    <div class="box">
+                        <div>                    
+                            <select id="character-dropdown" name="select-side">
+                                <option value="all">Show All</option>
+                                <option value="light">Light Side</option>
+                                <option value="dark">Dark Side</option>
+                            </select>
+
+                            <label class="switch">
+                                <input id = "toggle" type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <ul id="character-list"></ul>
                     </div>
-                    <ul id="character-list"></ul>
-                </div>
-                <div class="box" id = "card">
-                    <h2> </h2>
-                    <div id="card image">
-                        <img id="character-image"
-                        src = "https://ecdn.teacherspayteachers.com/thumbitem/-Choose-your-side-Star-Wars-writing-activity-2918245-1656584001/original-2918245-1.jpg"
-                        alt = "Choose your side"
+                    <div class="box" id = "card">
+                        <h2> </h2>
+                        <div id="card image">
+                            <img id="character-image"
+                            src = "https://ecdn.teacherspayteachers.com/thumbitem/-Choose-your-side-Star-Wars-writing-activity-2918245-1656584001/original-2918245-1.jpg"
+                            alt = "Choose your side"
+                            />
+                        </div>
+                        <p></p>
+                    </div>
+                    <div> 
+                        <form id="character-form">
+                        <h3 id="form-title">Add A Character!</h3>
+                        <input
+                            type="text"
+                            name="name"
+                            value=""
+                            placeholder="Enter a character's name..."
+                            class="input-text"
                         />
-                    </div>
-                    <p></p>
-                </div>
-                <div> 
-                    <form id="character-form">
-                    <h3 id="form-title">Add A Character!</h3>
-                    <input
-                        type="text"
-                        name="name"
-                        value=""
-                        placeholder="Enter a character's name..."
-                        class="input-text"
-                    />
-                    <br />
-                    <input
-                        type="text"
-                        name="image"
-                        value=""
-                        placeholder="Enter a character's image URL..."
-                        class="input-text"
-                    />
-                    <br />
-                    <input
-                        type="text"
-                        name="side"
-                        value=""
-                        class="input-text"
-                        placeholder="Dark or Light"
-                    />
-                    <br />
-                    <input
-                        type="text"
-                        name="height"
-                        value=""
-                        class="input-text"
-                        placeholder="Height"
-                    />
-                    <br />
-                    <input
-                        type="text"
-                        name="birthYear"
-                        value=""
-                        class="input-text"
-                        placeholder="Birth Year"
-                    />
-                    <br />
-                    <input id = "submit"
-                        type="submit"
-                        name="submit"
-                        value="Create Character"
-                        class="submit"
-                    />
-                </form>
-            </div>
-             <!-- <div>
-            <form id="edit-form">
-                <h3>Edit A Character!</h3>
-                <input
-                    type="text"
-                    name="name"
-                    value=""
-                    placeholder="Enter a character's new name..."
-                    class="input-text"
-                />
-                <br />
-                <input
-                    type="text"
-                    name="image"
-                    value=""
-                    placeholder="Enter a character's new image URL..."
-                    class="input-text"
-                />
-                <br />
-                <input
-                    type="text"
-                    name="side"
-                    value=""
-                    class="input-text"
-                    placeholder="Dark or Light"
-                />
-                <br />
-                <input
-                    type="text"
-                    name="height"
-                    value=""
-                    class="input-text"
-                    placeholder="New character's Height"
-                />
-                <br />
-                <input
-                    type="text"
-                    name="birthYear"
-                    value=""
-                    class="input-text"
-                    placeholder="New character's Birth Year"
-                />
-                <br />
-                <input id = "submit"
-                    type="submit"
-                    name="submit"
-                    value="Create Character"
-                    class="submit"
-                />
-                </form>
-            </div>  -->
+                        <br />
+                        <input
+                            type="text"
+                            name="image"
+                            value=""
+                            placeholder="Enter a character's image URL..."
+                            class="input-text"
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="side"
+                            value=""
+                            class="input-text"
+                            placeholder="Dark or Light"
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="height"
+                            value=""
+                            class="input-text"
+                            placeholder="Height"
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="birthYear"
+                            value=""
+                            class="input-text"
+                            placeholder="Birth Year"
+                        />
+                        <br />
+                        <input id = "submit"
+                            type="submit"
+                            name="submit"
+                            value="Create Character"
+                            class="submit"
+                        />
+                    </form>
+                </div>          
             </div>
         </div>
         <footer>

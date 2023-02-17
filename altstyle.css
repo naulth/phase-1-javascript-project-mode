@@ -16,10 +16,10 @@
 
 li{
   border-radius: 4px;
-    list-style-type: none;
-    padding: 10px;
-    font-size: 20px;
-    border: #FFE81F solid 1px;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  border: #FFE81F solid 1px;
 }
 
 #card-image {
@@ -27,10 +27,10 @@ li{
 }
 
 #logo-image{
-    position: absolute;
-    top: 300;
-    left: 200;
-    max-height: 300px;
+  position: absolute;
+  top: 300;
+  left: 200;
+  max-height: 300px;
 }
 
 h2{
@@ -60,8 +60,8 @@ p{
 
 img{
   text-align: center;
-    height: 20rem;
-    width: auto;
+  height: 20rem;
+  width: auto;
 }
 
 h1 {
@@ -69,7 +69,6 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 75px;
   text-align: center;
-  /*padding-top: 100px;*/
   color: white;
   top: 550;
   left: 220;
@@ -128,121 +127,114 @@ input {
 
 
 #character-form{
-  
   position: absolute;
-    right: 150;
-    top: 985;
+  right: 150;
+  top: 985;
 }
 
-/* The switch - the box around the slider */
 .switch {
-    position: absolute;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    left: 220;
-    top: 700;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 220;
+  top: 700;
+}
   
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FFE81F;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: black;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #fb0101;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #fb0101;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
-  #character-list {
-    
-    position: absolute;
-    top: 1000;
-    left: 175;
-    columns:2;
-  }
-   #edit-form{
-    position: absolute;
-    left: 300;
-    top: 720;
-  } 
 
-  #scrollBtn{
-    position: absolute;
-    top: 770;
-    left: 220;
-    background-color: #FFE81F;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px;
-  }
-
-  html{
-    scroll-behavior: smooth;
-  }
-
-  /* Baby yoday image */
-  #baby-yoda{
-    position: absolute;
-    top: 300;
-    right:200;
-    opacity: 0;
-  }
-
-  footer{
-    position: absolute;
-    bottom: -650;
-    left: 200;
-    padding-bottom: 100px;
-  }
-
-  /* Darth Vader Image */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
   
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFE81F;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+input:checked + .slider {
+  background-color: #fb0101;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fb0101;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#character-list {
+  
+  position: absolute;
+  top: 1000;
+  left: 175;
+  columns:2;
+}
+  #edit-form{
+  position: absolute;
+  left: 300;
+  top: 720;
+} 
+
+#scrollBtn{
+  position: absolute;
+  top: 770;
+  left: 220;
+  background-color: #FFE81F;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#baby-yoda{
+  position: absolute;
+  top: 300;
+  right:200;
+  opacity: 0;
+}
+
+footer{
+  position: absolute;
+  bottom: -650;
+  left: 200;
+  padding-bottom: 100px;
+}
